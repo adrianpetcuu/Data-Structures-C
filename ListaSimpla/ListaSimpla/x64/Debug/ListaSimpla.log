@@ -1,0 +1,8 @@
+﻿  ListaSimpla.c
+C:\Users\Petcu\source\repos\ListaSimpla\ListaSimpla\ListaSimpla.c(23,37): warning C4013: 'strlen' undefined; assuming extern returning int
+C:\Users\Petcu\source\repos\ListaSimpla\ListaSimpla\ListaSimpla.c(24,2): warning C4013: 'strcpy' undefined; assuming extern returning int
+C:\Users\Petcu\source\repos\ListaSimpla\ListaSimpla\ListaSimpla.c(37,21): warning C4133: '=': incompatible types - from 'nodLS *' to 'nodLS *'
+C:\Users\Petcu\source\repos\ListaSimpla\ListaSimpla\ListaSimpla.c(39,19): warning C4133: '=': incompatible types - from 'nodLS *' to 'nodLS *'
+C:\Users\Petcu\source\repos\ListaSimpla\ListaSimpla\ListaSimpla.c(51,20): warning C4133: '=': incompatible types - from 'nodLS *' to 'nodLS *'
+C:\Users\Petcu\source\repos\ListaSimpla\ListaSimpla\ListaSimpla.c(60,10): warning C4133: 'initializing': incompatible types - from 'nodLS *' to 'nodLS *'
+  ListaSimpla.vcxproj -> C:\Users\Petcu\source\repos\ListaSimpla\x64\Debug\ListaSimpla.exe
