@@ -107,6 +107,7 @@ int main()
 	}
 	printf("\n------------coada-----------\n"); 
 	traversare(prim);
+	//dezalocare coada
 	while (get(&prim, &ultim, &s) == 0)
 	{
 		free(s.nume);
