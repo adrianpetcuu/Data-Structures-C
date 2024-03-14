@@ -58,7 +58,6 @@ void traversare(nodLS* cap)
 	}
 	printf("Numar matricol: %d, Nume: %s, Medie: %5.2f\n",
 		temp->inf.nrMatricol, temp->inf.nume, temp->inf.medie);
-	temp = temp->next;
 }
 
 void traversareInversa(nodLS* coada)
@@ -72,7 +71,6 @@ void traversareInversa(nodLS* coada)
 	}
 	printf("Numar matricol: %d, Nume: %s, Medie: %5.2f\n",
 		temp->inf.nrMatricol, temp->inf.nume, temp->inf.medie);
-	temp = temp->prev;
 }
 
 void dezalocare(nodLS* cap)
@@ -89,6 +87,7 @@ void dezalocare(nodLS* cap)
 	free(temp);
 } 
 
+
 void stergeNodDupaNume(nodLS** cap, nodLS** coada, char* nume)
 {
 	nodLS* temp = *cap;
@@ -99,15 +98,13 @@ void stergeNodDupaNume(nodLS** cap, nodLS** coada, char* nume)
 			if (temp == *cap)
 			{
 				*cap = temp->next;
-				if (*cap != NULL)
-				{
-					(*cap)->prev = NULL;
-				}
+				(*cap)->prev = *coada;
+				(*coada)->next = *cap;
 			}
 			else if(temp == *coada)
 			{
 				*coada = temp->prev;
-				(*coada)->next = NULL;
+				(*coada)->next = *cap;
 			}
 			else
 			{
@@ -147,7 +144,6 @@ void conversieListaInVector(nodLS* cap, student* vector, int* nr, float prag)
 		vector[*nr].medie = temp->inf.medie;
 		(*nr)++;
 	}
-	temp = temp->next;
 }
 
 int main()
@@ -173,13 +169,8 @@ int main()
 	traversare(cap);
 	printf("\n-----------------------------------\n");
 	traversareInversa(coada);
-	printf("\n-----------------------------------\n");
 
-	stergeNodDupaNume(&cap, &coada, "Adrian");
-	traversare(cap);
-	printf("\n-----------------------------------\n");
-	traversareInversa(coada);
-	printf("\n-----------------------------------\n");
+	printf("\n--------------lista in vector doar stud cu medie > 9.5---------------\n");
 
 	int nr = 0;
 	student* vector = (student*)malloc(nrStud * sizeof(student));
@@ -189,13 +180,22 @@ int main()
 		printf("Numar matricol: %d, Nume: %s, Medie: %5.2f\n",
 			vector[i].nrMatricol, vector[i].nume, vector[i].medie);
 	}
-	  
+
 	for (int i = 0; i < nr; i++)
 	{
-		free(vector[i].nume); 
+		free(vector[i].nume);
 	}
 	free(vector);
 
+	printf("\n---------------lista dupa stergere--------------------\n");
+
+	stergeNodDupaNume(&cap, &coada, "Andreea");
+	traversare(cap);
+	printf("\n-----------------------------------\n");
+	traversareInversa(coada);
+	printf("\n-----------------------------------\n");
+
+	
 	dezalocare(cap);
 
 }  
