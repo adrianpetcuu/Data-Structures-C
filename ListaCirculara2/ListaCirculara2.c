@@ -25,29 +25,29 @@ nodLC* inserare(nodLC* cap, nodLC** coada, produs* p)
 	*(nou->inf->cod) = *(p->cod);
 	nou->inf->denumire = (char*)malloc((strlen(p->denumire) + 1) * sizeof(char));
 	strcpy(nou->inf->denumire, p->denumire);
-nou->inf->pret = p->pret;
-nou->inf->cantitate = p->cantitate;
-if (cap == NULL)
-{
-	cap = nou;
-	(*coada) = nou;
-	nou->prev = nou;
-	nou->next = nou;
-}
-else
-{
-	nodLC* temp = cap;
-	while (temp->next != cap)
+	nou->inf->pret = p->pret;
+	nou->inf->cantitate = p->cantitate;
+	if (cap == NULL)
 	{
-		temp = temp->next;
+		cap = nou;
+		(*coada) = nou;
+		nou->prev = nou;
+		nou->next = nou;
 	}
-	temp->next = nou;
-	nou->prev = temp;
-	(*coada) = nou;
-	(*coada)->next = cap;
-	cap->prev = (*coada);
-}
-return cap;
+	else
+	{
+		nodLC* temp = cap;
+		while (temp->next != cap)
+		{
+			temp = temp->next;
+		}
+		temp->next = nou;
+		nou->prev = temp;
+		(*coada) = nou;
+		(*coada)->next = cap;
+		cap->prev = (*coada);
+	}
+	return cap;
 }
 
 void traversare(nodLC* cap)
