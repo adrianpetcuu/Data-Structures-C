@@ -89,7 +89,6 @@ void dezalocare(nodLS* cap)
 	free(temp);
 } 
 
-
 void stergeNodDupaNume(nodLS** cap, nodLS** coada, char* nume)
 {
 	nodLS* temp = *cap;
