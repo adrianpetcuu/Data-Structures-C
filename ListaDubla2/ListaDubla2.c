@@ -98,8 +98,45 @@ void conversieListaVector(nodLD* cap, produs** vector, int* nr)
 		strcpy(vector[*nr]->denumire, temp->inf->denumire);
 		vector[*nr]->pret = temp->inf->pret;
 		vector[*nr]->cantitate = temp->inf->cantitate;
-		(*nr)++; 
-		temp = temp->next;     
+		(*nr)++;
+		temp = temp->next;
+	}
+}
+
+void stergereNodDupaNume(nodLD** cap, nodLD** coada, char* denumire)
+{
+	nodLD* temp = *cap;
+	while (temp != NULL)
+	{
+		if (strcmp(temp->inf->denumire, denumire) == 0)
+		{
+			if (temp == *cap)
+			{
+				*cap = temp->next;
+				if (*cap != NULL)
+				{
+					(*cap)->prev = NULL;
+				}
+			}
+			else if (temp == *coada)
+			{
+				*coada = temp->prev;
+				(*coada)->next = NULL;
+			}
+			else 
+			{
+				nodLD* anterior = temp->prev;
+				nodLD* urmator = temp->next;
+				anterior->next = urmator;
+				urmator->prev = anterior;
+			}
+			free(temp->inf->cod);
+			free(temp->inf->denumire);
+			free(temp->inf);
+			free(temp);
+			return;
+		}
+		temp = temp->next;
 	}
 }
 
@@ -135,8 +172,7 @@ int main()
 	traversare(cap);
 	printf("\n\n--------------traversare coada------------\n");
 	traversareInversa(coada);
-
-	int nr = 0; 
+	int nr = 0;
 	produs** vector = (produs**)malloc(nrProd * sizeof(produs*));
 	printf("\n\n--------------conversie lista in vector-----------\n");
 	conversieListaVector(cap, vector, &nr);
@@ -152,6 +188,12 @@ int main()
 		free(vector[i]);
 	}
 	free(vector);
+	printf("\n\n----------------stergere nod dupa nume----------------\n");
+	stergereNodDupaNume(&cap, &coada, "Apa");
+	printf("\n\n--------------traversare cap--------------\n");
+	traversare(cap);
+	printf("\n\n--------------traversare coada------------\n");
+	traversareInversa(coada);
 
 	dezalocare(cap);
 }
