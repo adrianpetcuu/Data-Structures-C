@@ -87,7 +87,7 @@ void dezalocare(nodLS* cap)
 	free(temp);
 } 
 
-
+//STERGEREA ESTE PENTRU LISTA DUBLA , NU PENTRU CIRCULARA !!!!!!!!!!!!!!!!!!!!!!!!!!!
 void stergeNodDupaNume(nodLS** cap, nodLS** coada, char* nume)
 {
 	nodLS* temp = *cap;
