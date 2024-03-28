@@ -118,7 +118,7 @@ void conversieListaVector(nodLC* cap, produs** vector, int* nr)
 	vector[*nr]->cantitate = temp->inf->cantitate;
 	(*nr)++;
 }
-
+//STERGEREA ESTE PENTRU LISTA DUBLA, NU PENTRU CIRCULARA !!!!!!!!!!!!!!!!!!!!
 void stergereNodDupaDenumire(nodLC** cap, nodLC** coada, char* denumire)
 {
 	nodLC* temp = *cap;
