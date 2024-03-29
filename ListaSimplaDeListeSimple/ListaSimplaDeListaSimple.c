@@ -7,19 +7,19 @@ typedef struct
 	int cod;
 	char* denumire;
 	float pret;
-}produs;
+} produs;
 
 typedef struct
 {
 	produs inf;
 	struct nodLS* next;
-}nodLS; //lista secundara
+} nodLS; //lista secundara
 
 typedef struct
 {
 	struct nodLS* inf;
 	struct nodLP* next;
-}nodLP; //lista principala
+} nodLP; //lista principala
 
 void inserareLS(nodLS** capLS, produs p)
 {
@@ -49,10 +49,10 @@ void traversareLS(nodLS* capLS)
 	nodLS* temp = capLS;
 	while (temp != NULL)
 	{
-		printf("\nCod: %d, Denumire: %s, Pret: %5.2f\n", temp->inf.cod, temp->inf.denumire, temp->inf.pret);
+		printf("\nCod: %d, Denumire: %s, Pret: %5.2f\n",
+			temp->inf.cod, temp->inf.denumire, temp->inf.pret);
 		temp = temp->next;
 	}
-	printf("\n");
 }
 
 void dezalocareLS(nodLS* capLS)
@@ -93,7 +93,7 @@ void traversareLP(nodLP* capLP)
 	int i = 1;
 	while (temp != NULL)
 	{
-		printf("Sublista %d:", i);
+		printf("\n----------Sublista %d-----------\n", i);
 		traversareLS(temp->inf);
 		temp = temp->next;
 		i++;
@@ -113,7 +113,6 @@ void dezalocareLP(nodLP* capLP)
 }
 
 
-
 int main()
 {
 	nodLP* capLP = NULL;
@@ -127,7 +126,7 @@ int main()
 	for (int i = 0; i < nrProd; i++)
 	{
 		fscanf(f, "%d", &p.cod);
-		fscanf(f, "%s", buffer);
+		fscanf(f, "%s", buffer); 
 		p.denumire = (char*)malloc((strlen(buffer) + 1) * sizeof(char));
 		strcpy(p.denumire, buffer);
 		fscanf(f, "%f", &p.pret);
@@ -142,11 +141,21 @@ int main()
 		free(p.denumire);
 	}
 	fclose(f);
+	printf("\n----------------Liste Secundare--------------\n");
+	printf("\n----------------Sublista 1--------------\n"); 
+	traversareLS(capLS1);
+	printf("\n----------------Sublista 2--------------\n");
+	traversareLS(capLS2);    
 
+
+	printf("\n----------------Lista Principala--------------\n");
 	inserareLP(&capLP, capLS1);
 	inserareLP(&capLP, capLS2);
-
 	traversareLP(capLP);
-
 	dezalocareLP(capLP);
+
+
+	//dezalocareLS(capLS1);
+	//dezalocareLS(capLS2);
+  
 }
