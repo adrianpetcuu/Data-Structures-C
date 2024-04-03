@@ -64,6 +64,34 @@ void dezalocare(nodLS* cap)
 	}
 }
 
+void stergereDupaNume(nodLS** cap, char nume[20])
+{
+	nodLS* temp = *cap;
+	nodLS* prev = NULL;
+	while (temp != NULL)
+	{
+		if (strcmp(temp->inf.nume, nume) == 0)
+		{
+			if (prev == NULL)
+			{
+				*cap = temp->next;
+				free(temp->inf.nume);
+				free(temp);
+				return;
+			}
+			else
+			{
+				prev->next = temp->next;
+				free(temp->inf.nume);
+				free(temp);
+				return;
+			}
+		}
+		prev = temp;
+		temp = temp->next;
+	}
+}
+
 int main()
 {
 	int nr;
@@ -109,5 +137,10 @@ int main()
 	fclose(f);*/
 
 	traversare(cap);
+	stergereDupaNume(&cap, "Adrian");
+
+	printf("\n------------------------\n");
+	traversare(cap);
+
 	dezalocare(cap);
 }
