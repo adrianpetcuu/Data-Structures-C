@@ -1,7 +1,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
 #include <malloc.h>
- 
+
 //linear probing
 
 typedef struct
@@ -105,9 +105,8 @@ void stergereDupaMarca(hashT tabela, char* marca)
 }
 
 
-void salvareHashTableInVector(hashT tabela, masina*** vector, int* nrElem, float pretMin, float pretMax)
+void salvareHashTableInVector(hashT tabela, masina* vector, int* nrElem, float pretMin, float pretMax)
 {
-	int nr = 0;
 	if (tabela.vector != NULL)
 	{
 		for (int i = 0; i < tabela.nrElem; i++)
@@ -116,28 +115,10 @@ void salvareHashTableInVector(hashT tabela, masina*** vector, int* nrElem, float
 			{
 				if (tabela.vector[i]->pret >= pretMin && tabela.vector[i]->pret <= pretMax)
 				{
-					nr++;
-				}
-			}
-		}
-	}
-
-	*vector = (masina**)malloc(nr * sizeof(masina*));
-
-
-	if (tabela.vector != NULL)
-	{
-		for (int i = 0; i < tabela.nrElem; i++)
-		{
-			if (tabela.vector[i] != NULL)
-			{
-				if (tabela.vector[i]->pret >= pretMin && tabela.vector[i]->pret <= pretMax)
-				{
-					(*vector)[*nrElem] = (masina*)malloc(sizeof(masina));
-					(*vector)[*nrElem]->anFabricatie = tabela.vector[i]->anFabricatie;
-					(*vector)[*nrElem]->marca = (char*)malloc((strlen(tabela.vector[i]->marca) + 1) * sizeof(char));
-					strcpy((*vector)[*nrElem]->marca, tabela.vector[i]->marca);
-					(*vector)[*nrElem]->pret = tabela.vector[i]->pret;
+					vector[*nrElem].anFabricatie = tabela.vector[i]->anFabricatie;
+					vector[*nrElem].marca = (char*)malloc((strlen(tabela.vector[i]->marca) + 1) * sizeof(char));
+					strcpy(vector[*nrElem].marca, tabela.vector[i]->marca);
+					vector[*nrElem].pret = tabela.vector[i]->pret;
 					(*nrElem)++;
 				}
 			}
@@ -178,18 +159,17 @@ void main()
 
 
 	int nrElem = 0;
-	masina** vector = NULL;
-	salvareHashTableInVector(tabela, &vector, &nrElem, 10000, 20000);
+	masina* vector = (masina*)malloc(nrMasini * sizeof(masina));
+	salvareHashTableInVector(tabela, vector, &nrElem, 10000, 30000);
 	printf("\n-----------------Afisare vector-------------\n");
 	for (int i = 0; i < nrElem; i++)
 	{
 		printf("\nAn Fabricatie: %d, Marca: %s, Pret: %5.2f\n",
-			vector[i]->anFabricatie, vector[i]->marca, vector[i]->pret);
+			vector[i].anFabricatie, vector[i].marca, vector[i].pret);
 	}
 	for (int i = 0; i < nrElem; i++)
 	{
-		free(vector[i]->marca);
-		free(vector[i]);
+		free(vector[i].marca);
 	}
 	free(vector);
 
