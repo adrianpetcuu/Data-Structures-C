@@ -1,0 +1,5 @@
+(3p) 1.Sa se construiasca si sa se afiseze o lista simpla cu n noduri continand informatii despre agentiile unei banci. Informatiile aferente codurilor sunt citite dintr un fisier. 
+(2p) 2.Sa se scrie functia pentru stergerea agentiilor cu coduri impare din lista simpla cu n agentii ale unei banci, iar agentiile cu coduri pare se vor salva intr un fisier. 
+(3p) 3.Sa se realizeze conversia elementelor din lista simpla anterioara intr o structura de tip lista de liste prin gruparea elementelor initiale dupa un criteriu la alegere. 
+(2p) 4.Sa se dezaloce toate structurile de date dinamice construite. Operatia de dezalocare va fi insotita de afisarea continutului structurilor in fisiere text , inainte de dezalocare memoriei heap.
+
