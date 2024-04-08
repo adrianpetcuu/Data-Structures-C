@@ -1,0 +1,7 @@
+(3p) 1.Sa se construiasca si sa se afiseze o tabela de dispersia cu n elemente avand informatii utile de tip student, cu atributele: cod, nume, varsta, medie.
+      Informatiile aferente studentilor sunt citite dintr-un fisier text, iar mecanismul de evitare a coliziunilor in tabela de dispersie este chaining.
+(2p) 2.Sa se scrie functia pentru stergerea studentului cu cea mai mare medie din tabela de dispersie.
+(3p) 3.Sa se realizeze conversia elementelor din tabela de dispersie anterioara intr-o structura de tip lista de liste prin gruparea elementelor initiale la nivel de medie
+       (studentii cu medie peste 5 sunt intr-o sublista, iar cei cu medie sub 5 in alta sublista).
+(2p) 4.Sa se dezaloce toate structurile de date dinamice construite. Operatia de dezalocare va fi instotita de afisarea continutului structurilor in fisiere text,
+    inainte de dezalocarea memoriei heap.
