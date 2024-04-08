@@ -1,0 +1,32 @@
+
+-----------Lista de liste-----------
+
+Sublista 1
+
+Cod: 2, Denumire: ALP, Dobanda:  5.60
+
+Cod: 4, Denumire: ING, Dobanda:  6.30
+
+Cod: 6, Denumire: BNR, Dobanda:  6.50
+
+Sublista 1
+
+Cod: 1, Denumire: BCR, Dobanda:  5.50
+
+Cod: 3, Denumire: BRD, Dobanda:  6.20
+
+Cod: 5, Denumire: UNI, Dobanda:  6.40
+
+------------Lista simpla-----------
+
+Cod: 1, Denumire: BCR, Dobanda:  5.50
+
+Cod: 2, Denumire: ALP, Dobanda:  5.60
+
+Cod: 3, Denumire: BRD, Dobanda:  6.20
+
+Cod: 4, Denumire: ING, Dobanda:  6.30
+
+Cod: 5, Denumire: UNI, Dobanda:  6.40
+
+Cod: 6, Denumire: BNR, Dobanda:  6.50
