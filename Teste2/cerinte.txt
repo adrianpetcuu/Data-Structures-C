@@ -1,0 +1,8 @@
+(3p) 1.Sa se realizeze programul pentru crearea si traversarea unei cozi ale carei informatii utile sunt articole de tip persoana. 
+  Informatiile aferente nodurilor sunt citite dintr-un fisier text.
+(2p) 2.Sa se scrie functia pentru conversia din coada de articole de tip persoana in stiva de articole de tip persoana.
+(3p) 3.Se considera o a doua coada de persoane cu date preluate de la consola. Sa se scrie functia pentru impletirea a doua cozi ale caror 
+informatii utile sunt articole de tip persoana si sa se afiseze intr-un fisier txt elementele structurii coada rezultata in urma impletirii.
+(2p) 4.Sa se dezaloce toate structurile de date dinamice construite. Operatia de dezalocare va fi insotita de afisarea continutului structurilor in fisiere text,
+inainte de dezalocarea memoriei heap.
+  
