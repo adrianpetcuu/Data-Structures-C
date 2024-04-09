@@ -1,0 +1,10 @@
+Test Nr.1
+(1p) oficiu
+(2p) 1. Sa se construiasca si sa se afiseze o lista simpla circulara cu n noduri continand informatii despre studentii unei facultati.
+  Informatiile aferente nodurilor sunt citite dintr-un fisier text, iar fiecare student ar trebui sa fie identificat prin numar matricol(int),
+  nume(char*), medie(float), precum si alte campuri la alegere.
+(2p) 2. Sa se scrie functia pentru stergerea din lista simpla circulara a studentului/studentilor cu media/mediile cuprinse intre doua valori prag specificate ca parametri.
+(3p) 3. Sa se realizeze conversia elementelor din lista simpla circulara anterioara intr-o structura de tip lista de liste 
+   prin gruparea elementelor initiale dupa un criteriu la alegere.
+(2p) 4. Sa se dezaloce toate structurile de date dinamice construite. Operatia de dezalocare va fi insotita de afisarea continutului structurilor in fisier text,
+  inainte de dezalocarea memoriei heap.
