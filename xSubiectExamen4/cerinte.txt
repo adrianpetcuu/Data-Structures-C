@@ -1,1 +1,25 @@
+Se considera structura de tip articol "Proiect" utilizata pentru stocarea datelor specifice unui proiect dintr-o organizatie
+(cod, durata, denumire, valoare, beneficiar etc). Scrieti cod sursa, compilati, testati cu seturi de date si lansati in
+executie pentru urmatoarele cerinte:
 
+1.Functia pentru construirea unui arbore binar de cautare echilibrat pe baza unei chei numerice din structura
+"Proiect". Datele de intrare sunt preluate dintr-un fisier text cu minim 20 de seturi de date de intrare.
+(20 de proiecte). (0.8P)
+
+2.Functia pentru cautarea proiectelor cu durata mai mare decat durata medie a proiectelor din arborele binar de cautare
+echilibrat. (0.5P)
+
+3.Functia pentru stergerea unui proiect din arborele binar de cautare echilibrat. (0.7P)
+
+4.Functia pentru conversia arborelui binar de cautare echilibrat intr-un vector dinamic de pointeri la "Proiect". (0.5P)
+
+5.Functia pentru construirea unei lsite duble circulare prin preluarea datelor din arborele binar de cautare echilibrat.
+Pentru lista dubla circulara, datele sunt stocate in zone de memorie heap diferite fata de cele aferente arborelui
+binar de cautare echilibrat. (0.5P)
+
+6.Functia pentru ordonarea dupa durata a proiectelor stocate in lista dubla circulara. (0.5P)
+
+7.Functiile pentru dezalocarea memoriei heap pentru toate structurile alocate dinamic din cadrul aplicatiei. (0.5P)
+
+8.Functia main(), pentru implementarea cerintelor de la punctele anterioare cu afisarea pe ecran/listarea in fisier 
+text a rezultatelor. (0.5P)
