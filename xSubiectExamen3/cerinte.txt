@@ -1,1 +1,26 @@
+Se considera structura de tip articol "Angajat" utilizata pentru stocarea datelor specifice angajatilor unei companii
+(cnp, nume, salariu, vechime, departament, adresa etc). Scrieti cod sursa, compilati, testati cu seturi de date si lansati
+in executie pentru urmatoarele cerinte:
 
+1.Functia pentru construirea unei structuri de tip lista de liste, prin gruparea pe departamente a angajatilor.
+Datele de intrare despre angajati sunt preluate dintr-un fisier text cu minim 20 de seturi de date de intrare
+(20 de angajati). (0.8P)
+
+2.Functia pentru determinarea angajatiilor cu cel mai mare salariu din fiecare departament. (0.5P)
+
+3.Functia pentru sortarea descrescatoare dupa vechime a angajatilor din cadrul listei de liste. (0.5P)
+
+4.Functia pentru construirea unei structuri de tip coada de angajati prin traversarea listei de liste si punerea
+in coada a angajatilor in ordine descrescatoare a vechimii. Pentru structura de tip coada, datele sunt stocate
+in zone de memorie heap diferite fara de cele aferente structurii de tip lista de liste. (0.7P)
+
+5.Functia pentru determinarea in cadrul structurii de tip coada a angajatilor al caror nume incepe cu aceeasi litera
+specificata. (0.4P)
+
+6.Functia pentru determinarea in cadrul structurii de tip coada a angajatilor care mai au 5 ani pana la varsta
+de pensionare si extragerea acestora intr-un vector de angajati. (0.6P)
+
+7.Functiile pentru dezalocarea memoriei heap pentru toate structurile alocare dinamic in cadrul aplicatiei (0.5P)
+
+8.Functia main() pentru implementarea cerintelor de la punctele anterioare cu afisarea pe ecran/listarea in fisier
+text a rezultatelor. (0.5P)
