@@ -1,1 +1,20 @@
+Implementati o aplicatie in limbajul C pentru gestiunea comenzilor online din cadrul unui restaurant.
+Se defineste structura "Comanda" ce contine urmatoarele campuri: cod(int), firmaTransport(char*),
+numarProduseComandate(int), sumaPlata(float).
 
+1.Creati o structura coada cu cel putin 7 comenzi, ale caror date sunt preluate dintr-un fisier text. (1.0P)
+
+2.Sa se afiseze elementele din coada, prin apelul functiilor specifice structurii FIFO si reconstruirea
+cozii dupa traversare. (0.5P)
+
+3.Implementati functia care extrage intr-un vector comenzile apartinand unei anumite firme de transport,
+specificata ca parametru de intrare al functiei si calculeaza suma totala de plata. Structura coada
+NU partajeaza zone de memorie heap cu structura vector. Functia implementata se apeleaza in main(),
+iar rezultatul apelului se afiseaza in consola de executie a aplicatiei. (1.5P)
+
+4.Implementati functia care salveaza intr-o structura de tip coada de prioritati comenzile din vector,
+astfel incat comanda cu cea mai mare suma de plata sa fie prima. Functia implementata se apeleaza in main(),
+iar rezultatul apelului se afiseaza in consola de executie a aplicatiei. (1.5P)
+
+5.Implementati functia care modifica numarul de produse comandate pentru o comanda din coada de prioritati al carui cod
+este specificat ca parametru. Noul numar de produse comandate este primit, de asemenea, ca parametru. Functia implementata se apeleaza in main(), iar rezultatul apelului se afiseaza in consola de executie a aplicatiei. (1.5P)
