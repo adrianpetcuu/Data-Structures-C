@@ -17,4 +17,5 @@ astfel incat comanda cu cea mai mare suma de plata sa fie prima. Functia impleme
 iar rezultatul apelului se afiseaza in consola de executie a aplicatiei. (1.5P)
 
 5.Implementati functia care modifica numarul de produse comandate pentru o comanda din coada de prioritati al carui cod
-este specificat ca parametru. Noul numar de produse comandate este primit, de asemenea, ca parametru. Functia implementata se apeleaza in main(), iar rezultatul apelului se afiseaza in consola de executie a aplicatiei. (1.5P)
+este specificat ca parametru. Noul numar de produse comandate este primit, de asemenea, ca parametru. 
+Functia implementata se apeleaza in main(), iar rezultatul apelului se afiseaza in consola de executie a aplicatiei. (1.5P)
