@@ -1,1 +1,13 @@
+Implementati o aplicatie in limbajul C pentru gestiunea vagoanelor din cadrul unui tren de calatori.
+Se defineste structura "Vagon" ce contine urmatoarele campuri: numarVagon(int), firmaTransport(char*),
+numarBileteVandute(int) si capacitateVagon(int).
 
+1.Creati o structura dubla inlantuita cu cel putin 5 vagoane asociate unui tren, ale caror date sunt preluate dintr-un fisier text. (1.0P)
+
+2.Sa se afiseze elementele din lista dubla, prin traversare in ambele sensuri. (0.5P)
+
+3.Implementati functia care sterge vagonul/vagoanele cu numarul minim de bilete vandute. Functia implementata se apeleaza in main(), iar rezultatul apelului se afiseaza in consola de executie a aplicatiei, prin traversare in ambele sensuri. (1.5p)
+
+4.Implementati functia care salveaza intr-o structura de tip coada de prioritati vagoanele din lista dubla, astfel incat vagonul cu cel mai mic grad de ocupare sa fie primul. Gradul de ocupare se calculeaza pentru fiecare vagon. Structura coada de prioritati NU partajeaza zone de memorie heap cu structura lista dubla. Functia implementata se apeleaza in main(), iar rezultatul apelului se afiseaza in consola de executie a aplicatiei. (1.5P)
+
+5.Implementati functia care modifica numarul de bilete vandute pentru un vagon din coada de prioritati al carui numar este specificat ca parametru. Noul numar de bilete este primit, de asemenea ca parametru. Functia implementata se apeleaza in main(), iar rezultatul apelului se afiseaza in consola de executie a aplicatiei. (1.5P)
