@@ -1,0 +1,8 @@
+7
+1 CFR 20 60
+2 Softrans 80 55
+3 Mobs 20 50
+4 Trons 50 70
+5 RosTrans 65 80
+6 Notrans 20 30
+7 TrainTrans 20 45
