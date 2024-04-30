@@ -1,0 +1,8 @@
+7
+1 Glovo 6 50.5
+2 Tazz 7 80.8
+3 Bolt 3 40.5
+4 Glovo 6 70.5
+5 Glovo 4 30.4
+6 MaxFood 7 90.6
+7 Glovo 4 50.6
