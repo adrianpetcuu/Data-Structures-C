@@ -290,6 +290,7 @@ void main()
 		cap = inserareLD(cap, &coada, v);
 		free(v.firmaTransport);
 	}
+	fclose(f);
 	printf("Traversare lista dubla: ");
 	traversare(cap);
 	printf("\n\nTraversare inversa lista dubla:");
