@@ -13,7 +13,7 @@ echilibrat. (0.5P)
 
 4.Functia pentru conversia arborelui binar de cautare echilibrat intr-un vector dinamic de pointeri la "Proiect". (0.5P)
 
-5.Functia pentru construirea unei lsite duble circulare prin preluarea datelor din arborele binar de cautare echilibrat.
+5.Functia pentru construirea unei liste duble circulare prin preluarea datelor din arborele binar de cautare echilibrat.
 Pentru lista dubla circulara, datele sunt stocate in zone de memorie heap diferite fata de cele aferente arborelui
 binar de cautare echilibrat. (0.5P)
 
