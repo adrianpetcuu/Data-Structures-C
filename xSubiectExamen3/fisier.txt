@@ -1,0 +1,21 @@
+20               
+1891018123456 Maria 3000.00 5 Vanzari Str.Florilor
+2940319234567 Ion 3500.50 3 IT Bd.Libertatii
+1910125234567 Ana 2800.75 2 HR Str.Mihai
+2640527345678 Andrei 3200.25 4 Vanzari Bd.Unirii
+1910823456789 Elena 2700.00 1 Vanzari Str.Pacii
+1931024567890 Radu 3800.00 6 IT Bd.Eroilor
+1640525678901 Laura 3100.50 3 IT Str.Victoriei
+2930516789012 Alexandru 3400.25 5 IT Bd.Republicii
+1920217890123 Ioana 2900.75 2 Vanzari Str.Rozelor
+1920328901234 Florin 2950.00 3 IT Bd.Independentei
+2910939012345 Cristina 3300.50 4 HR Str.Trandafirilor
+1901040123456 Mihai 3150.25 5 IT Bd.Revolutiei
+1920111234567 Diana 2850.75 2 HR Str.Libertatii
+2640222345678 George 3250.50 4 IT Bd.Decebal
+1930333456789 Alina 3550.00 6 HR Str.Dunarii
+1940444567890 Andreea 3650.75 7 Vanzari Bd.Moldovei
+1910655678901 Dan 2950.25 3 Vanzari Str.Crangului
+1900766789012 Elena 3100.50 4 IT Bd.Fratiei
+2910877890123 Radu 3350.00 5 HR Str.Ciresilor
+1920988901234 Ana 3000.75 3 Vanzari Bd.Libertatii
