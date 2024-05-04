@@ -34,16 +34,16 @@ nodLS* inserare(nodLS* cap, nodLS** coada, student s)
 	}
 	else
 	{
-nodLS* temp = cap;
-while (temp->next != cap)
-{
-	temp = temp->next;
-}
-temp->next = nou;
-nou->prev = temp;
-(*coada) = nou;
-(*coada)->next = cap;
-cap->prev = (*coada);
+		nodLS* temp = cap;
+		while (temp->next != cap)
+		{
+			temp = temp->next;
+		}
+		temp->next = nou;
+		nou->prev = temp;
+		(*coada) = nou;
+		(*coada)->next = cap;
+		cap->prev = (*coada);
 	}
 	return cap;
 }
